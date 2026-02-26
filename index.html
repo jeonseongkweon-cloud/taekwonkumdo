@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>세계태권검도연맹 | 태권검도 공식 플랫폼</title>
-  <meta name="description" content="구조 >> 교차원리, 교차원리 기반 무도. 태권검도(태권도+검도 통합) 교육·연맹·지부·세미나·공식 검증(조회)·자료실을 한 곳에서." />
+  <title>세계태권검도연맹 | Taekwon Kumdo Federation</title>
+  <meta name="description" content="구조 >> 교차원리, 교차원리 기반 무도. 태권검도 공식 본부 플랫폼 — 철학·프로그램·지도자·지부·자료·공식 조회를 하나의 구조로 연결합니다." />
   <meta name="theme-color" content="#0b0f19" />
 
   <!-- OG -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="세계태권검도연맹 | 태권검도 공식 플랫폼" />
-  <meta property="og:description" content="구조 >> 교차원리, 교차원리 기반 무도. 교육·지부·세미나·공식 검증(조회)·자료실." />
+  <meta property="og:title" content="세계태권검도연맹 | Taekwon Kumdo Federation" />
+  <meta property="og:description" content="구조 >> 교차원리, 교차원리 기반 무도. 교육·지부·지도자·자료·공식 조회(검증) 본부 플랫폼." />
   <meta property="og:image" content="./assets/images/og.jpg" />
 
   <link rel="icon" href="./assets/images/favicon.png" />
@@ -18,7 +18,7 @@
   <script defer src="./assets/js/data.js"></script>
   <script defer src="./assets/js/app.js"></script>
 
-  <!-- Optional: basic JSON-LD -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -26,10 +26,170 @@
     "name":"세계태권검도연맹",
     "alternateName":"Taekwon Kumdo Federation",
     "url":"./",
-    "description":"구조 >> 교차원리, 교차원리 기반 무도. 태권검도 공식 플랫폼",
+    "description":"구조 >> 교차원리, 교차원리 기반 무도. 태권검도 공식 본부 플랫폼",
     "sameAs":[]
   }
   </script>
+
+  <style>
+    /* --- HQ-only polish (index.html scoped) --- */
+    .hq-hero{position:relative; padding:44px 0 18px; overflow:hidden;}
+    .hq-orbit{
+      position:absolute; inset:-120px; pointer-events:none;
+      background:
+        radial-gradient(700px 420px at 18% 22%, rgba(74,163,255,.20), transparent 60%),
+        radial-gradient(720px 440px at 84% 18%, rgba(215,179,91,.18), transparent 62%),
+        radial-gradient(520px 340px at 55% 86%, rgba(255,255,255,.07), transparent 65%),
+        conic-gradient(from 210deg, rgba(215,179,91,.10), rgba(74,163,255,.08), rgba(215,179,91,.10));
+      filter:saturate(1.15);
+      opacity:.9;
+    }
+    .hq-scan{
+      position:absolute; left:-30%; top:10%;
+      width:60%; height:120%;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.09), transparent);
+      transform:skewX(-18deg);
+      animation:hqScan 6s linear infinite;
+      pointer-events:none;
+      opacity:.35;
+    }
+    @keyframes hqScan{0%{transform:translateX(0) skewX(-18deg)}100%{transform:translateX(210%) skewX(-18deg)}}
+
+    .hq-grid{position:relative; display:grid; grid-template-columns:1.25fr .75fr; gap:16px; align-items:stretch;}
+    .hq-title{margin:12px 0 10px; font-size:46px; line-height:1.05; letter-spacing:-.8px;}
+    .hq-sub{margin:0; color:rgba(255,255,255,.78); font-size:15px}
+    .hq-badges{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
+    .hq-badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:rgba(255,255,255,.82);
+      font-size:12px;
+    }
+    .hq-badge i{
+      width:8px; height:8px; border-radius:50%;
+      background:linear-gradient(180deg, rgba(215,179,91,.95), rgba(74,163,255,.85));
+      box-shadow:0 0 0 4px rgba(255,255,255,.04);
+      display:inline-block;
+    }
+
+    .hq-panel{
+      border-radius:28px;
+      background:
+        radial-gradient(600px 320px at 30% 10%, rgba(74,163,255,.14), transparent 62%),
+        radial-gradient(620px 340px at 80% 25%, rgba(215,179,91,.12), transparent 64%),
+        rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 16px 40px rgba(0,0,0,.35);
+      padding:16px;
+    }
+    .hq-panel h2{margin:0 0 6px; font-size:16px}
+    .hq-panel p{margin:0; color:rgba(255,255,255,.72); font-size:13px}
+
+    .kpi{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+    .kpi .k{
+      padding:12px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+    .k .num{
+      font-size:22px; font-weight:800; letter-spacing:-.3px;
+      color:rgba(255,255,255,.92);
+    }
+    .k .lab{font-size:12px; color:rgba(255,255,255,.62)}
+    .k .tip{font-size:11px; color:rgba(255,255,255,.55); margin-top:3px}
+
+    .hq-divider{height:1px; background:rgba(255,255,255,.10); margin:14px 0}
+
+    .hq-videoWrap{
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.20);
+      overflow:hidden;
+    }
+    .hq-videoWrap .ph{
+      aspect-ratio:16/9;
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.62);
+      background:
+        radial-gradient(520px 300px at 30% 30%, rgba(74,163,255,.14), transparent 60%),
+        radial-gradient(520px 300px at 70% 40%, rgba(215,179,91,.12), transparent 60%),
+        rgba(255,255,255,.04);
+      font-size:12px;
+    }
+    .hq-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .hq-actions .btn{flex:0 0 auto}
+
+    .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:12px}
+    .section-title h2{margin:0; font-size:20px}
+    .section-title p{margin:0; color:rgba(255,255,255,.62); font-size:13px}
+
+    .rail{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    .rail .card h3{margin:0 0 6px}
+    .rail .card p{margin:0; color:rgba(255,255,255,.70)}
+    .rail .mini{height:100%}
+
+    .hq-ctaBand{
+      margin:18px 0 0;
+      border-radius:30px;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(700px 360px at 20% 20%, rgba(74,163,255,.15), transparent 60%),
+        radial-gradient(700px 360px at 80% 20%, rgba(215,179,91,.13), transparent 60%),
+        rgba(255,255,255,.04);
+      box-shadow:0 16px 40px rgba(0,0,0,.35);
+      padding:18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .hq-ctaBand h2{margin:0; font-size:20px}
+    .hq-ctaBand .muted{margin-top:6px}
+    .partners{
+      display:grid;
+      grid-template-columns:repeat(6, 1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+    .pLogo{
+      height:54px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.55);
+      font-size:12px;
+    }
+    .docGrid{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin-top:12px}
+    .doc{padding:12px; border-radius:18px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04)}
+    .doc strong{display:block; margin-bottom:4px}
+    .doc span{color:rgba(255,255,255,.62); font-size:12px}
+
+    @media (max-width: 980px){
+      .hq-grid{grid-template-columns:1fr}
+      .hq-title{font-size:40px}
+      .kpi{grid-template-columns:1fr}
+      .partners{grid-template-columns:repeat(3, 1fr)}
+      .docGrid{grid-template-columns:repeat(2, 1fr)}
+      .rail{grid-template-columns:1fr}
+      .hq-ctaBand{flex-direction:column; align-items:flex-start}
+    }
+    @media (max-width: 420px){
+      .hq-title{font-size:34px}
+      .partners{grid-template-columns:repeat(2, 1fr)}
+      .docGrid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 
 <body>
@@ -58,127 +218,302 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <!-- HQ HERO -->
+    <section class="hq-hero">
+      <div class="hq-orbit" aria-hidden="true"></div>
+      <div class="hq-scan" aria-hidden="true"></div>
 
-      <div class="container hero-grid">
+      <div class="container hq-grid">
         <div>
           <p class="kicker">구조 >> 교차원리, 교차원리 기반 무도</p>
-          <h1 class="hero-title">태권검도<br>공식 플랫폼</h1>
-          <p class="lead">
-            태권도의 장점과 검도의 장점을 아우르는 신개념 무도·스포츠.
-            이곳은 연맹의 정통성(창시자)과 운영 리더십(현 총재), 그리고 교육·지부·검증(조회)·자료를
-            <strong>하나의 구조</strong>로 연결합니다.
+          <h1 class="hq-title">
+            태권검도<br>
+            <span style="color:rgba(215,179,91,.95)">HQ</span> 공식 본부 플랫폼
+          </h1>
+          <p class="hq-sub">
+            태권도의 장점과 검도의 장점을 아우르는 신개념 무도·스포츠.<br>
+            이 플랫폼은 <strong>철학(구조) → 교육(프로그램) → 운영(지부/지도자) → 표준(자료) → 검증(조회)</strong>을
+            하나의 흐름으로 연결하여 국제 품질을 설계합니다.
           </p>
 
-          <div class="cta">
-            <a class="btn primary" href="./about/">연맹 소개(인사말 2개)</a>
-            <a class="btn" href="./philosophy/">철학(교차원리)</a>
-            <a class="btn" href="./program/">프로그램</a>
+          <div class="hq-badges" aria-label="핵심 배지">
+            <span class="hq-badge"><i></i> Standardized Education</span>
+            <span class="hq-badge"><i></i> Safety & Ethics</span>
+            <span class="hq-badge"><i></i> Verified System</span>
+            <span class="hq-badge"><i></i> Global Branch Network</span>
           </div>
 
-          <div class="chips" aria-label="핵심 키워드">
-            <span class="chip">유소년·성인 과정</span>
-            <span class="chip">지도자 과정</span>
-            <span class="chip">세미나·공인행사</span>
-            <span class="chip">공식지정도장</span>
-            <span class="chip">공식 검증(조회)</span>
+          <div class="hq-actions">
+            <a class="btn primary" href="./verification/">공식 조회(검증)</a>
+            <a class="btn" href="./resources/">공식 자료(표준)</a>
+            <a class="btn" href="./program/">프로그램(교육)</a>
+            <a class="btn" href="./contact/">지부/지도자 신청</a>
           </div>
+
+          <p class="note">
+            HQ NOTE: “멋”을 만들기 전에, “구조”를 세웁니다. 구조가 서면 세계가 같은 품질로 움직입니다.
+          </p>
         </div>
 
-        <div class="hero-card">
-          <div class="card">
-            <h2>빠른 시작</h2>
-            <p class="muted">
-              방문 목적에 따라 바로 이동하세요. (조회/자료실은 공통 시스템으로 연결됩니다.)
-            </p>
+        <!-- Right HQ Panel -->
+        <aside class="hq-panel" aria-label="본부 패널">
+          <h2>HQ Dashboard</h2>
+          <p>국제 운영을 위한 핵심 지표와 빠른 업무 동선을 제공합니다.</p>
 
-            <div class="grid2" style="margin-top:12px;">
-              <a class="mini" href="./verification/">
-                <strong>조회 서비스</strong>
-                <span>단증·자격·지정도장 확인</span>
-              </a>
-              <a class="mini" href="./resources/">
-                <strong>자료실</strong>
-                <span>규정·양식·다운로드</span>
-              </a>
-              <a class="mini" href="./branches/">
-                <strong>지부 안내</strong>
-                <span>국내·해외 지부 / 신청</span>
-              </a>
-              <a class="mini" href="./contact/">
-                <strong>신청·문의</strong>
-                <span>지부·지도자·세미나</span>
-              </a>
+          <div class="kpi" role="list">
+            <div class="k" role="listitem">
+              <div class="num" data-count="51">0</div>
+              <div class="lab">Countries Ready</div>
+              <div class="tip">국가 확장 준비</div>
             </div>
+            <div class="k" role="listitem">
+              <div class="num" data-count="147">0</div>
+              <div class="lab">Branch Nodes</div>
+              <div class="tip">지부 네트워크</div>
+            </div>
+            <div class="k" role="listitem">
+              <div class="num" data-count="1000">0</div>
+              <div class="lab">Verified Records</div>
+              <div class="tip">조회 기반 검증</div>
+            </div>
+          </div>
 
-            <p class="note">
-              TIP: “조회”는 신뢰를, “자료실”은 표준을 만듭니다. 둘이 합쳐져야 세계가 믿습니다.
+          <div class="hq-divider"></div>
+
+          <div class="hq-videoWrap" aria-label="대표 영상 영역">
+            <div class="ph">
+              대표 영상 자리 (assets/video/intro.mp4) 또는 YouTube 임베드
+            </div>
+          </div>
+
+          <div class="hq-actions">
+            <a class="btn small primary" href="./media/">미디어 기록 보기</a>
+            <a class="btn small" href="./about/">인사말(2개) 보기</a>
+          </div>
+
+          <p class="note">
+            숫자는 예시입니다. 실제 지표로 바꾸면 “본부급 신뢰감”이 폭발합니다. 😄
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- HQ: THE SYSTEM (Structure Flow) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>HQ System Architecture</h2>
+          <p>국제 표준은 “페이지”가 아니라 “연결 구조”로 완성됩니다.</p>
+        </div>
+
+        <div class="rail">
+          <article class="card">
+            <h3>1) Philosophy</h3>
+            <p class="muted">구조(교차원리)로 기술을 정리합니다.</p>
+            <ul class="list">
+              <li>거리·각도·타이밍·중심</li>
+              <li>안전·통제·회수 원칙</li>
+              <li>평가 프레임(공정성)</li>
+            </ul>
+            <p><a class="btn small" href="./philosophy/">철학 보기</a></p>
+          </article>
+
+          <article class="card">
+            <h3>2) Education</h3>
+            <p class="muted">구조를 과정으로 구현합니다.</p>
+            <ul class="list">
+              <li>유소년/성인/지도자 트랙</li>
+              <li>세미나·공인행사 체계</li>
+              <li>기록 기반 성장</li>
+            </ul>
+            <p><a class="btn small" href="./program/">프로그램 보기</a></p>
+          </article>
+
+          <article class="card">
+            <h3>3) Governance</h3>
+            <p class="muted">현장 운영을 표준화합니다.</p>
+            <ul class="list">
+              <li>지부/지정도장 모델</li>
+              <li>지도자 인증/윤리</li>
+              <li>운영 프로토콜</li>
+            </ul>
+            <p>
+              <a class="btn small" href="./branches/">지부</a>
+              <a class="btn small" href="./masters/">지도자</a>
             </p>
+          </article>
+        </div>
+
+        <div class="hq-ctaBand">
+          <div>
+            <h2>“구조가 서면, 세계가 같은 품질로 움직입니다.”</h2>
+            <p class="muted">표준 문서(자료)와 검증(조회)이 합쳐질 때 국제 신뢰가 완성됩니다.</p>
+          </div>
+          <div class="cta">
+            <a class="btn primary" href="./resources/">자료실(표준)</a>
+            <a class="btn" href="./verification/">조회(검증)</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- HQ: OFFICIAL DOCUMENTS (Preview) -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <h2>이 플랫폼의 핵심 구조</h2>
-          <p class="muted">
-            태권검도는 단순 기술 모음이 아니라, 지도·심사·운영·안전이 한 원리로 연결되는 “구조”입니다.
-          </p>
+        <div class="section-title">
+          <h2>Official Standards</h2>
+          <p>전 세계 지도자가 동일한 언어로 지도/심사하도록 돕는 문서 체계</p>
+        </div>
+
+        <div class="docGrid" aria-label="문서 미리보기">
+          <div class="doc">
+            <strong>Safety Regulation</strong>
+            <span>안전 규정 요약 / 훈련 단계화</span>
+          </div>
+          <div class="doc">
+            <strong>Ethics & Conduct</strong>
+            <span>지도자 윤리/행동 강령</span>
+          </div>
+          <div class="doc">
+            <strong>Assessment Rubric</strong>
+            <span>평가표(기본·이동·응용)</span>
+          </div>
+          <div class="doc">
+            <strong>Branch Operation Guide</strong>
+            <span>지부/지정도장 운영 가이드</span>
+          </div>
+          <div class="doc">
+            <strong>Instructor Track</strong>
+            <span>지도자 과정/보수교육</span>
+          </div>
+          <div class="doc">
+            <strong>Event Protocol</strong>
+            <span>세미나/공인행사 진행 표준</span>
+          </div>
+          <div class="doc">
+            <strong>Brand & Naming</strong>
+            <span>공식 명칭/표기/로고 가이드</span>
+          </div>
+          <div class="doc">
+            <strong>Verification Policy</strong>
+            <span>조회 데이터 정책/정정 절차</span>
+          </div>
+        </div>
+
+        <p style="margin-top:12px">
+          <a class="btn primary" href="./resources/">공식 자료실 열기</a>
+          <a class="btn" href="./contact/">자료 요청/문의</a>
+        </p>
+
+        <p class="note">
+          운영 팁: 자료실에서 “버전 표기(v1.0, v1.1…)”를 넣으면 국제 파트너들이 신뢰합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- HQ: VERIFICATION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Verification (Trust by Design)</h2>
+          <p>누구나 확인 가능한 검증 구조</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>정통성</h3>
-            <p class="muted">
-              명예총재/이사장(창시자)의 철학과 선언을 기반으로, 태권검도의 방향과 기준을 명확히 합니다.
-            </p>
+            <h3>What can be verified</h3>
+            <p class="muted">단증 · 자격/인증 · 지도자 등록 · 공식 지부/지정도장</p>
+            <ul class="list">
+              <li>등록 여부 및 기본 정보 확인</li>
+              <li>정정/이의제기 절차 안내</li>
+              <li>투명성 확보</li>
+            </ul>
           </article>
+
           <article class="card">
-            <h3>운영 리더십</h3>
-            <p class="muted">
-              현 연맹 총재 메시지로 교육 표준·지부 운영·행사 체계를 현실적으로 실행합니다.
-            </p>
+            <h3>Why it matters</h3>
+            <p class="muted">국제 확장에 가장 강력한 무기는 “검증 가능성”입니다.</p>
+            <ul class="list">
+              <li>국가/지부 편차 최소화</li>
+              <li>인증 신뢰도 상승</li>
+              <li>브랜드 보호</li>
+            </ul>
           </article>
+
           <article class="card">
-            <h3>공식 검증</h3>
-            <p class="muted">
-              단증/자격/지정도장 정보를 “조회”로 확인하여, 누구나 공정하고 투명하게 검증할 수 있습니다.
-            </p>
+            <h3>Go to Official Verify</h3>
+            <p class="muted">공통 검증 시스템으로 연결됩니다.</p>
+            <p><a class="btn primary" href="./verification/">공식 조회 바로가기</a></p>
+            <p class="note">※ 조회가 “있다”는 것만으로도 사이트가 HQ처럼 보입니다.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- HQ: GLOBAL -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Global Expansion Ready</h2>
+          <p>다국어·지부·지도자 네트워크 기반 확장</p>
+        </div>
+
+        <div class="grid2">
+          <article class="card">
+            <h3>Language</h3>
+            <p class="muted">국제 파트너가 첫 방문에 이해할 수 있도록 다국어 페이지를 준비합니다.</p>
+            <div class="grid2" style="margin-top:10px">
+              <a class="mini" href="./language/en/"><strong>English</strong><span>Official</span></a>
+              <a class="mini" href="./language/cn/"><strong>中文</strong><span>官方</span></a>
+              <a class="mini" href="./language/es/"><strong>Español</strong><span>Oficial</span></a>
+              <a class="mini" href="./media/"><strong>Media</strong><span>Records</span></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Partnership</h3>
+            <p class="muted">
+              파트너/기관/도장 네트워크는 “표준 문서 + 검증 + 교육 과정”으로 유지됩니다.
+              제휴 문의는 신청·문의 페이지로 접수하세요.
+            </p>
+            <p style="margin-top:10px">
+              <a class="btn primary" href="./contact/">파트너십 문의</a>
+              <a class="btn" href="./branches/">지부 신청</a>
+            </p>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title">
+            <h2>Partners (Placeholder)</h2>
+            <p>로고를 넣으면 “국제 본부 느낌”이 완성됩니다.</p>
+          </div>
+          <div class="partners" aria-label="파트너 로고 그리드">
+            <div class="pLogo">Partner</div>
+            <div class="pLogo">Partner</div>
+            <div class="pLogo">Partner</div>
+            <div class="pLogo">Partner</div>
+            <div class="pLogo">Partner</div>
+            <div class="pLogo">Partner</div>
+          </div>
+          <p class="note">TIP: 실제 파트너가 아직 없어도 “예정(Planned)”로 표시해도 충분히 멋있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HQ: FINAL CTA -->
     <section class="section alt">
       <div class="container">
         <div class="banner">
           <div>
-            <h2>“구조를 알면, 기술은 정돈되고 성장은 기록됩니다.”</h2>
-            <p class="lead2">구조 >> 교차원리, 교차원리 기반 무도</p>
+            <h2>지부 · 지도자 · 지정도장 신청</h2>
+            <p class="lead2">공식 절차로 연결하면, 운영이 곧 “국제 표준”이 됩니다.</p>
           </div>
           <div class="cta">
-            <a class="btn primary" href="./verification/">공식 조회</a>
-            <a class="btn" href="./resources/">공식 자료</a>
+            <a class="btn primary" href="./contact/">신청·문의</a>
+            <a class="btn" href="./branches/">지부 안내</a>
+            <a class="btn" href="./masters/">지도자 체계</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>글로벌 확장 준비</h2>
-          <p class="muted">언어 페이지를 미리 만들어, 단계적으로 번역·확장할 수 있게 설계했습니다.</p>
-        </div>
-
-        <div class="grid2">
-          <a class="mini" href="./language/en/"><strong>English</strong><span>Official English page</span></a>
-          <a class="mini" href="./language/cn/"><strong>中文</strong><span>中文官方页面</span></a>
-          <a class="mini" href="./language/es/"><strong>Español</strong><span>Página oficial</span></a>
-          <a class="mini" href="./media/"><strong>Media</strong><span>Photos · Videos · Records</span></a>
         </div>
       </div>
     </section>
@@ -195,5 +530,47 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // HQ Counter animation (pure vanilla)
+    (function(){
+      const nums = document.querySelectorAll('[data-count]');
+      if(!nums.length) return;
+
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(prefersReduced){
+        nums.forEach(el => el.textContent = el.getAttribute('data-count'));
+        return;
+      }
+
+      const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+      const run = (el) => {
+        const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+        const dur = 1100 + Math.min(1400, target * 2);
+        const start = performance.now();
+        const from = 0;
+
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / dur);
+          const v = Math.round(from + (target - from) * easeOutCubic(t));
+          el.textContent = v.toLocaleString();
+          if(t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if(e.isIntersecting){
+            run(e.target);
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.35 });
+
+      nums.forEach(el => io.observe(el));
+    })();
+  </script>
 </body>
 </html>
