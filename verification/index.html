@@ -4,16 +4,74 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>조회 서비스 | 세계태권검도연맹</title>
-  <meta name="description" content="공식 조회 서비스로 이동합니다." />
-  <meta http-equiv="refresh" content="0; url=https://ipma.kr/verification/" />
+  <meta name="description" content="단증·자격·공식지부·지정도장·지도자 등록 여부를 공식 조회로 확인합니다. 공통 시스템으로 이동합니다." />
+  <meta name="theme-color" content="#0b0f19" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/data.js"></script>
+  <script defer src="../assets/js/app.js"></script>
 </head>
-<body class="center">
-  <div class="card">
-    <h1>조회 서비스로 이동 중…</h1>
-    <p class="muted">자동으로 이동하지 않으면 아래 버튼을 눌러주세요.</p>
-    <p><a class="btn primary" href="https://ipma.kr/verification/">IPMA 조회 서비스 열기</a></p>
-    <p><a class="btn" href="../">홈으로</a></p>
+<body>
+<header class="topbar">
+  <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
+  <nav class="nav">
+    <a href="../about/">연맹소개</a>
+    <a href="../philosophy/">철학</a>
+    <a href="../program/">프로그램</a>
+    <a href="../masters/">임원·지도자</a>
+    <a href="../branches/">지부</a>
+    <a class="pill active" href="../verification/">조회</a>
+    <a class="pill" href="../resources/">자료실</a>
+    <a href="../media/">미디어</a>
+    <a href="../contact/">신청·문의</a>
+  </nav>
+  <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+</header>
+
+<main class="container page">
+  <header class="page-head">
+    <h1>조회 서비스</h1>
+    <p class="lead">
+      국제 신뢰는 “검증 가능성”에서 완성됩니다.  
+      태권검도는 <strong>구조 >> 교차원리, 교차원리 기반 무도</strong>의 표준을
+      <strong>조회(verification)</strong>로 누구나 확인할 수 있게 설계합니다.
+    </p>
+  </header>
+
+  <section class="card">
+    <h2>조회 대상</h2>
+    <div class="cards">
+      <article class="card"><h3>단증</h3><p class="muted">공식 단 등록 여부 및 정보 확인</p></article>
+      <article class="card"><h3>자격/인증</h3><p class="muted">지도자/심사/과정 이수 인증 확인</p></article>
+      <article class="card"><h3>공식 지부/지정도장</h3><p class="muted">승인된 조직/기관 검증</p></article>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>공식 조회(공통 시스템)로 이동</h2>
+    <p class="muted">조회 시스템은 공통(IPMA)에서 관리됩니다. 아래 버튼을 눌러 이동하세요.</p>
+    <p>
+      <a class="btn primary" href="https://ipma.kr/verification/">공식 조회 열기</a>
+      <a class="btn" href="../resources/">자료실</a>
+    </p>
+    <p class="note">※ 조회 결과는 공식 등록 데이터에 기반합니다.</p>
+  </section>
+
+  <section class="card">
+    <h2>주의(투명성 안내)</h2>
+    <ul class="list">
+      <li>동명이인/표기 차이(영문/한글)로 검색이 어려울 수 있습니다.</li>
+      <li>승인/등록 후 반영까지 시간이 소요될 수 있습니다.</li>
+      <li>오류 발견 시 “신청·문의”로 알려주시면 즉시 정정 절차를 진행합니다.</li>
+    </ul>
+    <p><a class="btn small" href="../contact/">정정/문의</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
+    <div class="muted">© <span data-year></span></div>
   </div>
+</footer>
 </body>
 </html>
