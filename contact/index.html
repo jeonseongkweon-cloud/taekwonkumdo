@@ -4,71 +4,106 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>신청·문의 | 세계태권검도연맹</title>
-  <meta name="description" content="지부/지도자/세미나 신청 및 문의." />
+  <meta name="description" content="지부/지정도장/지도자 과정/세미나 신청 및 공식 문의." />
   <meta name="theme-color" content="#0b0f19" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/data.js"></script>
   <script defer src="../assets/js/app.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
-    <nav class="nav">
-      <a href="../about/">연맹소개</a>
-      <a href="../philosophy/">철학</a>
-      <a href="../program/">프로그램</a>
-      <a href="../masters/">임원·지도자</a>
-      <a href="../branches/">지부</a>
-      <a class="pill" href="../verification/">조회</a>
-      <a class="pill" href="../resources/">자료실</a>
-      <a class="active" href="../contact/">문의</a>
-    </nav>
-    <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+<header class="topbar">
+  <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
+  <nav class="nav">
+    <a href="../about/">연맹소개</a>
+    <a href="../philosophy/">철학</a>
+    <a href="../program/">프로그램</a>
+    <a href="../masters/">임원·지도자</a>
+    <a href="../branches/">지부</a>
+    <a class="pill" href="../verification/">조회</a>
+    <a class="pill" href="../resources/">자료실</a>
+    <a href="../media/">미디어</a>
+    <a class="active" href="../contact/">신청·문의</a>
+  </nav>
+  <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+</header>
+
+<main class="container page">
+  <header class="page-head">
+    <h1>신청·문의</h1>
+    <p class="lead">
+      태권검도는 “연결”로 성장합니다.  
+      지부/지도자/세미나/지정도장 신청을 공식 채널로 접수합니다.
+    </p>
   </header>
 
-  <main class="container page">
-    <header class="page-head">
-      <h1>신청·문의</h1>
-      <p class="lead">지부/지도자/세미나/공식지정도장 신청 및 문의를 받습니다.</p>
-    </header>
+  <section class="grid2">
+    <article class="card">
+      <h2>신청 유형</h2>
+      <div class="timeline">
+        <div class="t-item"><div class="t-year">A</div><div class="t-body"><strong>지부 신청</strong> (국내/해외)</div></div>
+        <div class="t-item"><div class="t-year">B</div><div class="t-body"><strong>공식 지정도장</strong> 신청</div></div>
+        <div class="t-item"><div class="t-year">C</div><div class="t-body"><strong>지도자 과정</strong> 신청/문의</div></div>
+        <div class="t-item"><div class="t-year">D</div><div class="t-body"><strong>세미나·공인행사</strong> 문의</div></div>
+        <div class="t-item"><div class="t-year">E</div><div class="t-body"><strong>파트너십/미디어</strong> 문의</div></div>
+      </div>
+      <p class="muted">필요 서류/양식은 자료실에서 확인 가능합니다.</p>
+      <p><a class="btn small" href="../resources/">자료실</a> <a class="btn small" href="../branches/">지부 안내</a></p>
+    </article>
 
-    <section class="grid2">
-      <article class="card">
-        <h2>연락처</h2>
-        <ul class="list">
-          <li><strong>이메일</strong>: (추가 예정)</li>
-          <li><strong>전화</strong>: (추가 예정)</li>
-          <li><strong>오픈채팅</strong>: (추가 예정)</li>
-        </ul>
-        <p class="muted">※ 실제 정보로 교체해 주세요.</p>
-      </article>
+    <article class="card">
+      <h2>온라인 접수(권장)</h2>
+      <p class="muted">현재 폼은 “자리”입니다. 구글폼/메일로 연결하면 즉시 운영 가능합니다.</p>
+      <form class="form" onsubmit="return false;">
+        <label>이름/기관명<input type="text" placeholder="예) ○○도장 / 홍길동" /></label>
+        <label>국가/지역<input type="text" placeholder="예) Korea / Ulsan" /></label>
+        <label>연락처<input type="text" placeholder="전화 또는 이메일" /></label>
+        <label>문의 유형
+          <select>
+            <option>지부 신청</option>
+            <option>공식 지정도장 신청</option>
+            <option>지도자 과정</option>
+            <option>세미나/공인행사</option>
+            <option>파트너십/미디어</option>
+            <option>기타</option>
+          </select>
+        </label>
+        <label>내용<textarea rows="6" placeholder="문의 내용을 적어주세요."></textarea></label>
+        <button class="btn primary" type="button">제출(연결 예정)</button>
+        <p class="muted">※ 실제 운영 시: 구글폼 링크로 연결하거나, 이메일 전송 방식으로 변경합니다.</p>
+      </form>
+    </article>
+  </section>
 
-      <article class="card">
-        <h2>빠른 신청 양식(간단)</h2>
-        <form class="form" onsubmit="return false;">
-          <label>이름/기관명<input type="text" placeholder="예) ○○도장 / 홍길동" /></label>
-          <label>연락처<input type="text" placeholder="전화 또는 이메일" /></label>
-          <label>문의 유형
-            <select>
-              <option>지부 신청</option>
-              <option>공식지정도장 신청</option>
-              <option>지도자 과정</option>
-              <option>세미나/행사</option>
-              <option>기타</option>
-            </select>
-          </label>
-          <label>내용<textarea rows="5" placeholder="문의 내용을 적어주세요."></textarea></label>
-          <button class="btn primary" type="button">제출(추후 연결)</button>
-          <p class="muted">이 폼은 현재 저장 기능이 없습니다. (구글폼/메일링으로 연결 가능)</p>
-        </form>
-      </article>
-    </section>
-  </main>
+  <section class="card">
+    <h2>제출 체크리스트</h2>
+    <ul class="list">
+      <li>기관/도장 기본 정보(주소, 대표자)</li>
+      <li>운영 형태(지부/지정도장) 선택</li>
+      <li>지도자 경력/수련 이력(요약)</li>
+      <li>연맹 표준 준수 동의(자료실 규정 확인)</li>
+    </ul>
+  </section>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
-      <div class="muted">© <span data-year></span></div>
-    </div>
-  </footer>
+  <section class="card">
+    <h2>FAQ</h2>
+    <details class="mini">
+      <summary><strong>신청 후 공식 등록은 어떻게 확인하나요?</strong> <span class="muted">조회 서비스에서 확인</span></summary>
+      <p class="muted">승인 후 조회 서비스에 반영되며, 공식 등록 여부를 누구나 확인할 수 있습니다.</p>
+      <p><a class="btn small primary" href="../verification/">조회</a></p>
+    </details>
+    <details class="mini">
+      <summary><strong>자료/규정은 어디서 받나요?</strong> <span class="muted">자료실</span></summary>
+      <p class="muted">공식 규정·양식·평가표는 자료실에서 제공됩니다.</p>
+      <p><a class="btn small" href="../resources/">자료실</a></p>
+    </details>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
+    <div class="muted">© <span data-year></span></div>
+  </div>
+</footer>
 </body>
 </html>
