@@ -4,66 +4,132 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>지부 안내 | 세계태권검도연맹</title>
-  <meta name="description" content="국내·해외 지부 운영 안내 및 신청." />
+  <meta name="description" content="국내·해외 지부 및 공식 지정도장 안내. 운영 모델, 신청 요건, 절차, 혜택, 검증(조회) 연동." />
   <meta name="theme-color" content="#0b0f19" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/data.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/branches.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
-    <nav class="nav">
-      <a href="../about/">연맹소개</a>
-      <a href="../philosophy/">철학</a>
-      <a href="../program/">프로그램</a>
-      <a href="../masters/">임원·지도자</a>
-      <a class="active" href="../branches/">지부</a>
-      <a class="pill" href="../verification/">조회</a>
-      <a class="pill" href="../resources/">자료실</a>
-      <a href="../contact/">문의</a>
-    </nav>
-    <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+<header class="topbar">
+  <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
+  <nav class="nav">
+    <a href="../about/">연맹소개</a>
+    <a href="../philosophy/">철학</a>
+    <a href="../program/">프로그램</a>
+    <a href="../masters/">임원·지도자</a>
+    <a class="active" href="../branches/">지부</a>
+    <a class="pill" href="../verification/">조회</a>
+    <a class="pill" href="../resources/">자료실</a>
+    <a href="../media/">미디어</a>
+    <a href="../contact/">신청·문의</a>
+  </nav>
+  <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+</header>
+
+<main class="container page">
+  <header class="page-head">
+    <h1>지부 안내</h1>
+    <p class="lead">
+      태권검도의 국제 확장은 “많이”가 아니라 “같은 품질”로 완성됩니다.  
+      <strong>구조 >> 교차원리, 교차원리 기반 무도</strong> 표준을 기반으로
+      지부/지정도장 운영 모델을 제공합니다.
+    </p>
   </header>
 
-  <main class="container page">
-    <header class="page-head">
-      <h1>지부 안내</h1>
-      <p class="lead">국내·해외 지부를 통해 교육·행사·인증이 연결됩니다.</p>
-    </header>
-
-    <section class="card">
-      <h2>지부 운영 형태</h2>
-      <div class="cards">
-        <article class="mini card"><h3>국내 지부</h3><p>지역 지도자 네트워크, 정기 세미나, 공인행사 지원</p></article>
-        <article class="mini card"><h3>해외 지부</h3><p>국가별 파트너 운영, 국제 인증 연동, 통역·교류 지원</p></article>
-        <article class="mini card"><h3>공식 지정 기관/도장</h3><p>기준 충족 시 지정(표준 훈련, 안전 운영, 윤리 준수)</p></article>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>지부 목록</h2>
-      <p class="muted">※ branches.js에 데이터만 넣으면 자동 표시로 확장할 수 있습니다.</p>
-      <div id="branchesList" class="cards"></div>
-    </section>
-
-    <section class="card">
-      <h2>신청 절차</h2>
-      <ol class="list">
-        <li>기본 정보 제출(국가/지역, 대표자, 연락처)</li>
-        <li>운영 형태 선택(지부/지정도장)</li>
-        <li>교육·규정 안내</li>
-        <li>승인 후 공식 등록</li>
-      </ol>
-      <a class="btn primary" href="../contact/">지부 신청 문의하기</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
-      <div class="muted">© <span data-year></span></div>
+  <section class="card">
+    <h2>운영 모델</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>국내 지부</h3>
+        <p class="muted">지역 네트워크 · 정기 세미나 · 공인행사 운영</p>
+        <ul class="list">
+          <li>교육 표준/자료 배포</li>
+          <li>지도자 과정 운영 협력</li>
+          <li>지역 행사/교류</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>해외 지부</h3>
+        <p class="muted">국가 파트너 · 통역/교류 · 국제 인증 연동</p>
+        <ul class="list">
+          <li>국가별 책임자 운영</li>
+          <li>다국어 자료 확장</li>
+          <li>국제 행사 연계</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>공식 지정도장</h3>
+        <p class="muted">현장 적용 중심 · 표준 수련 · 품질 유지</p>
+        <ul class="list">
+          <li>표준 커리큘럼 운영</li>
+          <li>평가표 기반 지도</li>
+          <li>조회 시스템으로 검증</li>
+        </ul>
+      </article>
     </div>
-  </footer>
+  </section>
+
+  <section class="card">
+    <h2>지부/지정도장 혜택(표준 패키지)</h2>
+    <div class="timeline">
+      <div class="t-item"><div class="t-year">Standard</div><div class="t-body">공식 자료/규정 제공 · 평가표/체크리스트 제공</div></div>
+      <div class="t-item"><div class="t-year">Training</div><div class="t-body">지도자 과정/세미나 우선 안내 · 운영 가이드</div></div>
+      <div class="t-item"><div class="t-year">Verification</div><div class="t-body">조회 시스템 연동(지부/도장/지도자 검증)</div></div>
+      <div class="t-item"><div class="t-year">Brand</div><div class="t-body">공식 명칭/표기 가이드 · 프로모션 패키지(선택)</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>신청 요건(요약)</h2>
+    <ul class="list">
+      <li>연맹 표준(자료실) 준수</li>
+      <li>안전 규정 준수(보호/거리/통제/회수)</li>
+      <li>지도자 인증/보수 교육 참여</li>
+      <li>기록 기반 운영(평가표/로그)</li>
+    </ul>
+    <p class="muted">※ 자세한 요건/양식은 자료실에서 제공합니다.</p>
+    <p><a class="btn small" href="../resources/">자료실</a></p>
+  </section>
+
+  <section class="card">
+    <h2>신청 절차</h2>
+    <ol class="list">
+      <li>운영 형태 선택(지부/지정도장)</li>
+      <li>기본 정보 제출(국가/지역/대표/연락처)</li>
+      <li>표준 안내(커리큘럼·규정·평가표)</li>
+      <li>검토 및 승인</li>
+      <li>조회 시스템 반영(공식 등록)</li>
+    </ol>
+    <p><a class="btn primary" href="../contact/">신청하기</a> <a class="btn" href="../verification/">등록 확인(조회)</a></p>
+  </section>
+
+  <section class="card">
+    <h2>지부 목록</h2>
+    <p class="muted">※ branches.js에 데이터 추가 시 자동 표시됩니다.</p>
+    <div id="branchesList" class="cards"></div>
+  </section>
+
+  <section class="card">
+    <h2>FAQ</h2>
+    <details class="mini">
+      <summary><strong>지부와 지정도장의 차이는?</strong> <span class="muted">운영 범위가 다릅니다.</span></summary>
+      <p class="muted">지부는 지역/국가 단위 네트워크 운영, 지정도장은 현장 수련 운영 중심입니다.</p>
+    </details>
+    <details class="mini">
+      <summary><strong>공식 등록 여부는 어디서 확인하나요?</strong> <span class="muted">조회 서비스</span></summary>
+      <p class="muted">등록 후 조회 서비스에서 지부/도장/지도자 정보를 확인할 수 있습니다.</p>
+      <p><a class="btn small primary" href="../verification/">조회</a></p>
+    </details>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
+    <div class="muted">© <span data-year></span></div>
+  </div>
+</footer>
 </body>
 </html>
