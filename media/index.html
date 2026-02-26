@@ -4,61 +4,100 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>미디어 | 세계태권검도연맹</title>
-  <meta name="description" content="사진·영상·세미나 기록." />
+  <meta name="description" content="사진·영상·세미나 기록·프레스킷. 태권검도의 국제 기록 보관소." />
   <meta name="theme-color" content="#0b0f19" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/data.js"></script>
   <script defer src="../assets/js/app.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
-    <nav class="nav">
-      <a href="../about/">연맹소개</a>
-      <a href="../philosophy/">철학</a>
-      <a href="../program/">프로그램</a>
-      <a href="../masters/">임원·지도자</a>
-      <a class="active" href="../media/">미디어</a>
-      <a href="../branches/">지부</a>
-      <a class="pill" href="../verification/">조회</a>
-      <a class="pill" href="../resources/">자료실</a>
-      <a href="../contact/">문의</a>
-    </nav>
-    <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+<header class="topbar">
+  <a class="brand" href="../"><span class="mark"></span><div class="brand-text"><strong>세계태권검도연맹</strong><span>Taekwon Kumdo Federation</span></div></a>
+  <nav class="nav">
+    <a href="../about/">연맹소개</a>
+    <a href="../philosophy/">철학</a>
+    <a href="../program/">프로그램</a>
+    <a href="../masters/">임원·지도자</a>
+    <a href="../branches/">지부</a>
+    <a class="pill" href="../verification/">조회</a>
+    <a class="pill" href="../resources/">자료실</a>
+    <a class="active" href="../media/">미디어</a>
+    <a href="../contact/">신청·문의</a>
+  </nav>
+  <button class="nav-toggle" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+</header>
+
+<main class="container page">
+  <header class="page-head">
+    <h1>미디어</h1>
+    <p class="lead">
+      태권검도는 “말”보다 “기록”으로 증명됩니다.  
+      교육·세미나·지부·공인행사 자료를 축적해 국제 표준의 신뢰를 만듭니다.
+    </p>
   </header>
 
-  <main class="container page">
-    <header class="page-head">
-      <h1>미디어</h1>
-      <p class="lead">사진·영상·세미나 기록을 모아두는 공간입니다.</p>
-    </header>
+  <section class="card">
+    <h2>미디어 카테고리</h2>
+    <div class="cards">
+      <article class="card"><h3>공식 영상</h3><p class="muted">소개/철학/프로그램/세미나 하이라이트</p></article>
+      <article class="card"><h3>세미나 기록</h3><p class="muted">지도자 워크숍/국제 교류/특강</p></article>
+      <article class="card"><h3>지부 활동</h3><p class="muted">국내·해외 지부 행사/수련/인증</p></article>
+    </div>
+  </section>
 
-    <section class="card">
+  <section class="grid2">
+    <article class="card">
       <h2>대표 영상</h2>
-      <p class="muted">assets/video/에 넣고 아래 source만 교체하면 됩니다.</p>
+      <p class="muted">assets/video/intro.mp4 를 올리고 아래 source를 유지하면 됩니다.</p>
       <video class="video" controls playsinline>
         <source src="../assets/video/intro.mp4" type="video/mp4" />
       </video>
-    </section>
+      <p class="muted" style="margin-top:10px;">
+        추천 구성: ① 철학(구조) ② 프로그램(현장) ③ 공인(검증) ④ 글로벌(지부)
+      </p>
+    </article>
 
-    <section class="card">
-      <h2>갤러리</h2>
-      <div class="gallery">
-        <div class="ph">이미지</div>
-        <div class="ph">이미지</div>
-        <div class="ph">이미지</div>
-        <div class="ph">이미지</div>
-        <div class="ph">이미지</div>
-        <div class="ph">이미지</div>
-      </div>
-      <p class="muted">images/media/ 폴더에 넣고 실제 이미지로 교체하면 됩니다.</p>
-    </section>
-  </main>
+    <article class="card">
+      <h2>프레스킷(Press Kit)</h2>
+      <p class="muted">언론/파트너가 바로 사용할 수 있는 “공식 자료 묶음”(예시).</p>
+      <ul class="list">
+        <li>로고(PNG/SVG)</li>
+        <li>슬로건/설명문(한글/영문)</li>
+        <li>대표 사진/행사 사진</li>
+        <li>연맹 소개 요약(1페이지)</li>
+      </ul>
+      <p><a class="btn small primary" href="../resources/">자료실에서 받기</a></p>
+    </article>
+  </section>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
-      <div class="muted">© <span data-year></span></div>
+  <section class="card">
+    <h2>갤러리(샘플)</h2>
+    <p class="muted">images/media/ 폴더에 이미지를 넣고 실제 이미지로 교체하세요.</p>
+    <div class="gallery">
+      <div class="ph">세미나</div>
+      <div class="ph">지부</div>
+      <div class="ph">지도자</div>
+      <div class="ph">수련</div>
+      <div class="ph">공인행사</div>
+      <div class="ph">국제교류</div>
     </div>
-  </footer>
+  </section>
+
+  <section class="card">
+    <h2>업로드 가이드(권장)</h2>
+    <div class="timeline">
+      <div class="t-item"><div class="t-year">파일명</div><div class="t-body">YYYY-MM-DD_국가-도시_행사명_카테고리.jpg</div></div>
+      <div class="t-item"><div class="t-year">저작권</div><div class="t-body">촬영자/제공자 표기, 초상권 동의 확보</div></div>
+      <div class="t-item"><div class="t-year">품질</div><div class="t-body">사진 2000px 이상 권장, 영상 1080p 이상 권장</div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>세계태권검도연맹</strong><p class="muted">Taekwon Kumdo Federation</p></div>
+    <div class="muted">© <span data-year></span></div>
+  </div>
+</footer>
 </body>
 </html>
